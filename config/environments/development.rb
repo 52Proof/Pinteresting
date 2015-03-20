@@ -39,5 +39,5 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   #required for Heroku 
-   config.action_mailer.default_url_options = { host: 'kane-dreams-of-sushi.herokuapp.com', port: 3000 }
+   config.action_mailer.default_url_options = { host: 'https://git.heroku.com/kane-dreams-of-sushi.git', port: 3000 }
 end
