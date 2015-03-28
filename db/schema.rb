@@ -11,15 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150324223402) do
+ActiveRecord::Schema.define(version: 20150327232448) do
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
     t.string   "string"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "user_id"
     t.string   "integer"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "pins", ["integer"], name: "index_pins_on_integer"
